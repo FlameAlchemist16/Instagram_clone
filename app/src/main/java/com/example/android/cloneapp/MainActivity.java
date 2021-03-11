@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 
+import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,5 +21,14 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar.setTitle(R.string.app_name);
         setSupportActionBar(toolbar);
+
+        ImageButton ig=(ImageButton)findViewById(R.id.messenger);
+        ig.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this, MessengingActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

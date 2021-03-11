@@ -17,38 +17,34 @@
             android:layout_height="match_parent">
             <ImageButton
                 android:id="@+id/backArrow"
-                android:layout_width="36dp"
-                android:layout_height="32dp"
+                android:layout_width="34dp"
+                android:layout_height="24dp"
                 android:layout_marginTop="14dp"
-                android:backgroundTint="@color/black"
                 android:background="@drawable/ic_baseline_arrow_back_24"
+                android:backgroundTint="@color/black"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/backArrow"
                 android:text="@string/userId"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="22sp"
                 android:textStyle="bold"
-                android:layout_toRightOf="@id/backArrow"/>
+                android:layout_toEndOf="@id/backArrow" />
 
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
-    <ImageView
-        android:id="@+id/profilePic"
-        android:layout_width="wrap_content"
+    <ListView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/m_toolbar"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:layout_toEndOf="@id/profilePic"
         android:layout_below="@id/m_toolbar"
-        tools:text="Aman_Garg"
-        android:layout_toRightOf="@id/profilePic" />
+        android:id="@+id/messengerView"
+        android:divider="@null"
+        android:backgroundTint="@color/white"
+        android:dividerHeight="0dp">
+    </ListView>
 </RelativeLayout>
