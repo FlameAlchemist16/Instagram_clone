@@ -40,10 +40,12 @@
     </androidx.appcompat.widget.Toolbar>
     <SearchView
         android:id="@+id/searchBar"
-        android:layout_width="wrap_content"
+        android:layout_width="372dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/m_toolbar"
+        android:queryBackground="@color/dark_grey"
         android:contentDescription="Search"
+        android:maxWidth="372dp"
         />
     <ListView
         android:layout_width="match_parent"
