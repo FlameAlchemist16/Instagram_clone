@@ -38,10 +38,18 @@
 
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
+    <SearchView
+        android:id="@+id/searchBar"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m_toolbar"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search"
+        android:maxWidth="372dp" />
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/m_toolbar"
+        android:layout_below="@id/searchBar"
         android:id="@+id/messengerView"
         android:divider="@null"
         android:backgroundTint="@color/white"

@@ -60,7 +60,7 @@
     android:layout_below="@id/userName"
     android:layout_toRightOf="@id/textMessage"
     android:layout_toEndOf="@id/textMessage"
-    android:textColor="@android:color/darker_gray"
+    android:textColor="@color/dark_grey"
     android:textSize="14sp"
     tools:text="2 h" />
     <ImageButton
