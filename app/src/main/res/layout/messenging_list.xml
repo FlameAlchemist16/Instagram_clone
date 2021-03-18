@@ -15,7 +15,6 @@
         android:shape="ring"
         android:layout_marginTop="18dp"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:thicknessRatio="1.9">
         <ImageView
             android:id="@+id/profilePic"
@@ -28,11 +27,9 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginStart="22dp"
-    android:layout_marginLeft="22dp"
-    android:layout_marginTop="28dp"
+        android:layout_marginTop="28dp"
     android:layout_toEndOf="@id/view1"
-    android:layout_toRightOf="@id/view1"
-    android:textColor="@color/black"
+        android:textColor="@color/black"
     android:textSize="14sp"
     tools:text="Aman_Garg" />
 
@@ -42,9 +39,7 @@
     android:layout_height="wrap_content"
     android:layout_below="@id/userName"
     android:layout_marginStart="22dp"
-    android:layout_marginLeft="22dp"
     android:layout_toEndOf="@id/view1"
-    android:layout_toRightOf="@id/view1"
     android:maxWidth="200dp"
     android:ellipsize="end"
     android:singleLine="true"
@@ -55,10 +50,8 @@
     android:id="@+id/time1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="8dp"
     android:layout_marginStart="8dp"
     android:layout_below="@id/userName"
-    android:layout_toRightOf="@id/textMessage"
     android:layout_toEndOf="@id/textMessage"
     android:textColor="@color/dark_grey"
     android:textSize="14sp"
@@ -66,9 +59,7 @@
     <ImageButton
     android:layout_width="32dp"
     android:layout_height="24dp"
-    android:layout_alignParentRight="true"
     android:layout_marginTop="34dp"
-    android:layout_marginRight="16dp"
     android:layout_alignParentEnd="true"
     android:background="@drawable/camera"
     android:layout_marginEnd="16dp" />
