@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="92dp"
-    android:backgroundTint="?attr/colorPrimary">
+    android:background="@color/white">
     <androidx.cardview.widget.CardView
         android:layout_width="56dp"
         android:layout_height="56dp"
@@ -27,9 +27,9 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginStart="22dp"
-        android:layout_marginTop="28dp"
+    android:layout_marginTop="28dp"
     android:layout_toEndOf="@id/view1"
-        android:textColor="@color/black"
+    android:textColor="@color/black"
     android:textSize="14sp"
     tools:text="Aman_Garg" />
 
@@ -43,7 +43,7 @@
     android:maxWidth="200dp"
     android:ellipsize="end"
     android:singleLine="true"
-    android:textColor="@color/dark_grey"
+    android:textColor="@android:color/darker_gray"
     android:textSize="14sp"
     tools:text="Hi" />
     <TextView
@@ -53,14 +53,15 @@
     android:layout_marginStart="8dp"
     android:layout_below="@id/userName"
     android:layout_toEndOf="@id/textMessage"
-    android:textColor="@color/dark_grey"
+    android:textColor="@android:color/darker_gray"
     android:textSize="14sp"
     tools:text="2 h" />
     <ImageButton
-    android:layout_width="32dp"
-    android:layout_height="24dp"
+    android:layout_width="22dp"
+    android:layout_height="20dp"
     android:layout_marginTop="34dp"
     android:layout_alignParentEnd="true"
     android:background="@drawable/camera"
-    android:layout_marginEnd="16dp" />
+    android:layout_marginEnd="16dp"
+    android:foregroundTint="@color/white"/>
 </RelativeLayout>
