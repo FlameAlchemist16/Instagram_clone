@@ -54,12 +54,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/m_toolbar"
+        android:layout_above="@+id/cam"
         android:id="@+id/messengerView"
         android:divider="@null"
         android:backgroundTint="@color/white"
         android:dividerHeight="0dp">
     </ListView>
     <ImageButton
+        android:id="@+id/cam"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
