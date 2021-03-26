@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="?attr/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/toolBarName1"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="@drawable/name"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="16dp" />
+
+            <ImageButton
+                android:id="@+id/messenger1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="19dp"
+                android:background="@drawable/messenger_icon_143737" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/accountInfo"
+        android:layout_below="@id/my_toolbar1">
+        <androidx.cardview.widget.CardView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/account1"
+            app:cardCornerRadius="30dp"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="16dp"
+            android:thicknessRatio="1.9">
+            <ImageView
+                android:id="@+id/accountPicture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:background="@drawable/pm" />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/black_800"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/account1"
+            tools:text="udemy"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="40dp"
+            android:textSize="16sp"
+            android:textColor="@color/dark_grey"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/account1"
+            tools:text="Sponsored"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.55dp"
+        android:background="@color/black_200"
+        android:layout_below="@id/accountInfo"
+        android:layout_marginTop="16dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="456dp"
+        android:layout_below="@id/divider"
+        tools:background="@drawable/sample_post"/>
+</RelativeLayout>
