@@ -37,7 +37,12 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/my_toolbar"/>
+        android:layout_below="@id/my_toolbar"
+        android:id="@+id/new_posts"
+        android:backgroundTint="@color/white"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_above="@id/my_nav"/>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/my_nav"
         android:layout_width="match_parent"
