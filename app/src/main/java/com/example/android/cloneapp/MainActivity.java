@@ -12,10 +12,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.bottomnavigation.BottomNavigationView.OnNavigationItemSelectedListener;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,5 +40,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ArrayList<PostList> post = new ArrayList<>();
+        post.add(new PostList("_.dhruvg._", "Back To Campus", "Going back to campus after long time ;)","76", R.drawable.sample_post, R.drawable.pm));
+        post.add(new PostList("Mubashshir Uddin", "Gazing at sky", "","64", R.drawable.sample_post, R.drawable.pm));
+        post.add(new PostList("roit_kjrwl", "Mcleod Ganj, Dharamshala", "","112", R.drawable.sample_post, R.drawable.pm));
+        post.add(new PostList("naman_nhhaparia_", "", "Time for some cool pic","70", R.drawable.sample_post, R.drawable.pm));
+        post.add(new PostList("roit_kjrwl", "Mcleod Ganj, Dharamshala", "","112", R.drawable.sample_post, R.drawable.pm));
+        post.add(new PostList("roit_kjrwl", "Mcleod Ganj, Dharamshala", "","112", R.drawable.sample_post, R.drawable.pm));
+        post.add(new PostList("roit_kjrwl", "Mcleod Ganj, Dharamshala", "","112", R.drawable.sample_post, R.drawable.pm));
+        
+        PostAdapter postAdapter=new PostAdapter(this, post);
+        ListView listView=(ListView)findViewById(R.id.new_posts);
+        listView.setAdapter(postAdapter);
     }
 }

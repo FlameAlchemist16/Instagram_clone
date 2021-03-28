@@ -29,11 +29,11 @@ public class MessengingActivity extends AppCompatActivity {
         });
         ArrayList<MessageList> messages= new ArrayList<MessageList>();
 
-        messages.add(new MessageList("Dhruv Goel","Mentioned you in a story","1 h",R.drawable.pm));
+        messages.add(new MessageList("_.dhruvg._","Mentioned you in a story","1 h",R.drawable.pm));
         messages.add(new MessageList("Mubashshir Uddin","Sent a video","2 h",R.drawable.pm));
-        messages.add(new MessageList("Naman Chhaparia","Liked a message","20 h",R.drawable.pm));
+        messages.add(new MessageList("naman_chhaparia_","Liked a message","20 h",R.drawable.pm));
         messages.add(new MessageList("Neha Tiwari","reacted to your message","1 d",R.drawable.pg));
-        messages.add(new MessageList("Rohit Kejriwal","jaldi milte hai","2 d",R.drawable.pm));
+        messages.add(new MessageList("Roit_kjrwl","jaldi milte hai","2 d",R.drawable.pm));
         messages.add(new MessageList("Shruti","Liked a message","2 d",R.drawable.pg));
         messages.add(new MessageList("Ridhul Sambhod","Liked your message","3 d",R.drawable.pm));
         messages.add(new MessageList("Bhailog OP","Sent a video","1 w",R.drawable.pm));
