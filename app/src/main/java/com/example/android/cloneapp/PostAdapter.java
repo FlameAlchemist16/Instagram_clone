@@ -2,11 +2,8 @@ package com.example.android.cloneapp;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
-import android.content.Context;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,7 +35,7 @@ public class PostAdapter extends ArrayAdapter<PostList> {
         View postView = convertView;
         if(postView == null){
             postView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.activity_stories, parent, false);
+                    R.layout.activity_posts, parent, false);
         }
         PostList post = getItem(position);
         TextView itemText = (TextView) postView.findViewById(R.id.AccountName);
