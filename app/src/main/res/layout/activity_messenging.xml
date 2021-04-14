@@ -27,32 +27,47 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="30dp"
-                android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
-                android:layout_toRightOf="@id/backArrow"
                 android:text="@string/userId"
                 android:textColor="@color/black"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:layout_toEndOf="@id/backArrow" />
-
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="27dp"
+                android:background="@drawable/video_call"
+                android:layout_marginEnd="15dp"
+                android:layout_toStartOf="@id/new_msg"
+                android:layout_marginTop="11dp"/>
+            <ImageButton
+                android:id="@+id/new_msg"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_new_message"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="8dp"/>
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
-    <SearchView
-        android:id="@+id/searchBar"
-        android:layout_width="372dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/m_toolbar"
-        android:iconifiedByDefault="false"
-        android:queryHint="Search"
-        android:maxWidth="372dp" />
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/searchBar"
+        android:layout_below="@id/m_toolbar"
+        android:layout_above="@+id/cam"
         android:id="@+id/messengerView"
         android:divider="@null"
         android:backgroundTint="@color/white"
         android:dividerHeight="0dp">
     </ListView>
+    <ImageButton
+        android:id="@+id/cam"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:maxWidth="40dp"
+        android:foregroundTint="@color/white"
+        android:background="@drawable/capture"
+        android:focusedByDefault="true"
+        tools:targetApi="o" />
 </RelativeLayout>
