@@ -4,11 +4,12 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true">
-        <com.google.android.material.bottomnavigation.BottomNavigationView
+        <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
             android:id="@+id/my_nav"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/bottom_nav_layout"
+            app:itemIconTint="@drawable/bottom_nav_selector"
             app:menu="@menu/bottom_nav"/>
 
     </RelativeLayout>

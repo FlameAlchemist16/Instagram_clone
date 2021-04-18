@@ -18,6 +18,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".MessengingActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".AddActivity" />
+        <activity android:name=".LikeActivity" />
+        <activity android:name=".AccountActivity" />
     </application>
 
 </manifest>

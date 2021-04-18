@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.bottomnavigation.BottomNavigationView.OnNavigationItemSelectedListener;
+import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 import java.util.ArrayList;
 
@@ -39,13 +40,22 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        bottomNavSetup();
 
-        ArrayList<PostList> post = new ArrayList<>();
-        post.add(new PostList("_.dhruvg._", "Back To Campus", "Going back to campus after long time ;)","76", R.drawable.sample_post, R.drawable.pm));
-
-        
-        PostAdapter postAdapter=new PostAdapter(this, post);
-        ListView listView=(ListView)findViewById(R.id.new_posts);
-        listView.setAdapter(postAdapter);
+//        ArrayList<PostList> post = new ArrayList<>();
+//        post.add(new PostList("_.dhruvg._", "Back To Campus", "Going back to campus after long time ;)","76", R.drawable.sample_post, R.drawable.pm));
+//
+//
+//        PostAdapter postAdapter=new PostAdapter(this, post);
+//        ListView listView=(ListView)findViewById(R.id.new_posts);
+//        listView.setAdapter(postAdapter);
+    }
+    private void bottomNavSetup(){
+        BottomNavigationViewEx bottomNavigationViewEx = (BottomNavigationViewEx) findViewById(R.id.my_nav);
+        BottomNavigatorSetup.bottomNavigationSetupDone(bottomNavigationViewEx);
+        BottomNavigatorSetup.enableBottomNavigation(MainActivity.this, bottomNavigationViewEx);
+        Menu menu = bottomNavigationViewEx.getMenu();
+        MenuItem menuItem = menu.getItem(0);
+        menuItem.setChecked(true);
     }
 }

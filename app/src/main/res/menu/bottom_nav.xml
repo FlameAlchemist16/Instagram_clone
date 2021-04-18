@@ -5,21 +5,31 @@
     <item
         android:id="@+id/home_page"
         android:icon="@drawable/ic_home"
+        android:enabled="true"
+        android:checked="true"
         android:title=""/>
     <item
         android:id="@+id/search_page"
         android:icon="@drawable/ic_search"
+        android:enabled="true"
+        android:checked="false"
         android:title=""/>
     <item
         android:id="@+id/add_new_post"
         android:icon="@drawable/ic_add"
+        android:checked="false"
+        android:enabled="true"
         android:title=""/>
     <item
         android:id="@+id/like_page"
         android:icon="@drawable/ic_like"
+        android:checked="false"
+        android:enabled="true"
         android:title="" />
     <item
         android:id="@+id/profile_page"
         android:icon="@drawable/ic_account"
+        android:enabled="true"
+        android:checked="false"
         android:title=""/>
 </menu>
