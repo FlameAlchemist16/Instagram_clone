@@ -1,12 +1,12 @@
 package com.example.android.cloneapp;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.android.cloneapp.navigation.BottomNavigatorSetup;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 public class LikeActivity extends AppCompatActivity {

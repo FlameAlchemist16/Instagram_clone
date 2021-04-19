@@ -1,25 +1,20 @@
 package com.example.android.cloneapp;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ListView;
-import android.widget.TextView;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.bottomnavigation.BottomNavigationView.OnNavigationItemSelectedListener;
+import com.example.android.cloneapp.messages.MessengingActivity;
+import com.example.android.cloneapp.navigation.BottomNavigatorSetup;
+import com.google.android.material.tabs.TabLayout;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,19 +22,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setupPager();
 
-        toolbar.setTitle(R.string.app_name);
-        setSupportActionBar(toolbar);
-
-        ImageButton ig = (ImageButton) findViewById(R.id.messenger);
-        ig.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MessengingActivity.class);
-                startActivity(intent);
-            }
-        });
         bottomNavSetup();
 
 //        ArrayList<PostList> post = new ArrayList<>();
@@ -50,6 +34,22 @@ public class MainActivity extends AppCompatActivity {
 //        ListView listView=(ListView)findViewById(R.id.new_posts);
 //        listView.setAdapter(postAdapter);
     }
+
+    private void setupPager(){
+        HomePagerAdapter homePagerAdapter = new HomePagerAdapter(getSupportFragmentManager());
+        homePagerAdapter.addFragment(new homeFragment());
+        homePagerAdapter.addFragment(new messageFragment());
+
+        ViewPager viewPager = (ViewPager) findViewById(R.id.new_posts);
+        viewPager.setAdapter(homePagerAdapter);
+
+//        TabLayout tabLayout = (TabLayout) findViewById(R.id.my_toolbar);
+//        tabLayout.setupWithViewPager(viewPager, false);
+//
+//        tabLayout.getTabAt(0).setCustomView(R.layout.home_button);
+//        tabLayout.getTabAt(1).setCustomView(R.layout.message_button);
+
+    }
     private void bottomNavSetup(){
         BottomNavigationViewEx bottomNavigationViewEx = (BottomNavigationViewEx) findViewById(R.id.my_nav);
         BottomNavigatorSetup.bottomNavigationSetupDone(bottomNavigationViewEx);
@@ -58,4 +58,9 @@ public class MainActivity extends AppCompatActivity {
         MenuItem menuItem = menu.getItem(0);
         menuItem.setChecked(true);
     }
+    public void openMessages(View view){
+        Intent intent = new Intent(MainActivity.this, MessengingActivity.class);
+        startActivity(intent);
+    }
+
 }

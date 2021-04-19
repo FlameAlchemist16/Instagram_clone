@@ -6,6 +6,7 @@ import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.android.cloneapp.navigation.BottomNavigatorSetup;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 public class AddActivity extends AppCompatActivity {

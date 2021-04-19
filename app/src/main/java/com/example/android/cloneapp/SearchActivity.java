@@ -1,15 +1,12 @@
 package com.example.android.cloneapp;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
+import com.example.android.cloneapp.navigation.BottomNavigatorSetup;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 public class SearchActivity extends AppCompatActivity {

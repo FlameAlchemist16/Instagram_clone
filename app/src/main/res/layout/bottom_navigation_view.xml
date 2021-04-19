@@ -10,7 +10,8 @@
             android:layout_height="match_parent"
             android:background="@drawable/bottom_nav_layout"
             app:itemIconTint="@drawable/bottom_nav_selector"
-            app:menu="@menu/bottom_nav"/>
+            app:menu="@menu/bottom_nav"
+            app:itemRippleColor="@null"/>
 
     </RelativeLayout>
 </merge>

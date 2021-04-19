@@ -5,12 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MessengingActivity">
+    tools:context=".messages.MessengingActivity">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/m_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary">
+        android:layout_height="50dp"
+        android:background="@drawable/top_toolbar_layout">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -63,7 +63,7 @@
     <ImageButton
         android:id="@+id/cam"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:maxWidth="40dp"
         android:foregroundTint="@color/white"

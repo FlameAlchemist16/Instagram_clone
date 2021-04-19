@@ -15,17 +15,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/top_toolbar">
 
-            <include layout="@layout/toolbar_view"/>
-
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/top_toolbar">
-
             <include layout="@layout/post_pager_view"/>
 
         </RelativeLayout>
+
 
         <include layout="@layout/bottom_navigation_view"/>
     </RelativeLayout>

@@ -1,4 +1,4 @@
-package com.example.android.cloneapp;
+package com.example.android.cloneapp.navigation;
 
 import android.app.Activity;
 import android.content.Context;
@@ -7,6 +7,12 @@ import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 
+import com.example.android.cloneapp.AccountActivity;
+import com.example.android.cloneapp.AddActivity;
+import com.example.android.cloneapp.LikeActivity;
+import com.example.android.cloneapp.MainActivity;
+import com.example.android.cloneapp.R;
+import com.example.android.cloneapp.SearchActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
